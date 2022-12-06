@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+}
+:root{
+    --color-primary:#0f2862;
+    --color-secondary:#9e363a;
+    --color-tertiay:#091f36;
+    --colour-quaternary:#4f5f76;
+    --color-white:#ffffffff;
+    --colour-black:#000;
+    --colour-grey1:#121212;
+    --color-grey2:#181818;
+    --color-grey3:#282828;
+    --color-grey4:#404040;
+    --color-grey5:#B3B3B3;
+    --br-sm-2:14px;
+    --transition-trans: all .5s ease-in-out;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+
+body{
+    background-image: url(./images/itl.cat_4k-ultra-hd-wallpapers_69235.png);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height: 100vh;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    color: var(--color-white);
+    transition: all,.5s ease-in-out;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header{
+    height:100vh ;
+    color: var(--color-white);
+    overflow: hidden;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+}
+.section{
+    transform: translateY(-100%)scale(0);
+    transition:var(--transition-trans);
+    background-color: var(--color-primary);
+}
+.sec1{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+
+.sec2{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+
+.sec3{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+
+.sec4{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+.sec5{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+
+.sec6{
+    display:none;
+    transform: translateY(0)scale(1);
+}
+//controls
+
+.ctrls{
+    position: fixed;
+    z-index: 10;
+    top:50%;
+    right:3%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .activate{
+        background-color:rgb(2, 215, 215)!important;
+        transition: var(--transition-trans)  ;
+        i{
+            color:var(--color-white)!important;
+        }
+    }
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-grey3);
+        width: 50px;
+        height: 50px;
+        border-radius: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.7rem;
+        box-shadow:var(--box-shadow-1);
+        i{
+            font-size: 1.7rem;
+            color:var(--color-grey5);
+        }
+    }
+}
+
+
+   
+.logo{
+    // color: #ffffffff;
+    font-weight: 700;
+    //text-decoration: solid;
+    font-size: 2em;
+    letter-spacing: 3px;
+    width: 25%;
+    animation: animate 25s linear infinite;   
+}
+@keyframes animate{
+    50%
+    {
+        color: #0b9bc3;
+        box-shadow: none;
+    }
+}
