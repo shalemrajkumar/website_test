@@ -11,33 +11,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 <body class="main">
-    <header class="section sec1 header act">
+    <header class="section sec1 header act"id="home">
+        <div class="logo">SRaj.Tech
+
+        </div>
     </header>
-        <div class="logo">SRaj.Tech</div>
     <main>
-        <section class="section sec2 about me"></section>
-        <section class="section sec3 projects"></section>
-        <section class="section sec4 blogs"></section>
-        <section class="section sec5 gallery"></section>
+        <section class="section sec2 about-me"id="about-me"></section>
+        <section class="section sec3 projects"id="projects"></section>
+        <section class="section sec4 blogs"id="blogs"></section>
+        <section class="section sec5 gallery"id="gallery"></section>
     </main>
+        <div class="theme">
+            <i id="icon" onclick="change('icon')" class="fa-regular fa-moon" aria-hidden="true"></i>
+        </div>
     <div class="ctrls">
-        <div class="control control-1 activate">
+       
+        <div class="control control-1 activate" data-id="home">
             <i class="fa-solid fa-house-chimney"></i>
         </div>
-        <div class="control control-2">
+        <div class="control control-2"data-id="about-me">
             <i class="fa-solid fa-user-ninja"></i>
         </div>
-        <div class="control control-3">
+        <div class="control control-3"data-id="projects">
             <i class="fa-solid fa-briefcase"></i>
         </div>
-        <div class="control control-4">
+        <div class="control control-4"data-id="blogs">
             <i class="fa-solid fa-newspaper"></i>
         </div>
-        <div class="control control-5">
+        <div class="control control-5"data-id="gallery">
             <i class="fa-sharp fa-solid fa-images"></i>
-        </div>
-    </div>
+        </div>   
+        
 
+    
+ 
     <script src="switch.js"></script>
 </body>
 </html>
