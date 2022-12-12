@@ -13,7 +13,7 @@
     })
 })();
 function change(){
-    console.log("clicked");
+//     console.log("clicked");
     if(document.getElementById('icon').className == 'fa-regular fa-moon'){
         document.getElementById('icon').className = "fa-solid fa-sun";
     }else {
