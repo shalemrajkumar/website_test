@@ -12,10 +12,12 @@
         
     })
 })();
-function change (icon){
-if(document.getElementById(icon).className="fa-regular fa-moon"){
-            document.getElementById(icon).className="fa-solid fa-sun";
-        }
-        else{
-            document.getElementById(icon).className="fa-regular fa-moon";
-        }}
+function change(){
+//     console.log("clicked");
+    if(document.getElementById('icon').className == 'fa-regular fa-moon'){
+        document.getElementById('icon').className = "fa-solid fa-sun";
+    }else {
+        document.getElementById('icon').className = "fa-regular fa-moon";
+    }
+}
+
