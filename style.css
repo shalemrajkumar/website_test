@@ -40,6 +40,7 @@
 
 body {
   background-image: var(--background-image-dark);
+  background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -69,13 +70,12 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
 }
 
 .section {
   display: none;
-  -webkit-transform: translateY(-100%) scale(0);
-          transform: translateY(-100%) scale(0);
+  -webkit-transform: translateY(-100%) translateX(0) scale(0);
+          transform: translateY(-100%) translateX(0) scale(0);
   -webkit-transition: var(--transition-trans);
   transition: var(--transition-trans);
   background-color: none;
@@ -83,37 +83,38 @@ section {
 
 .sec1 {
   display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1);
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(246, 194, 148, 0.257)), color-stop(rgba(244, 238, 238, 0.25)), to(rgba(46, 244, 109, 0.25)));
   background-image: linear-gradient(to bottom right, rgba(246, 194, 148, 0.257), rgba(244, 238, 238, 0.25), rgba(46, 244, 109, 0.25));
+  background-color: none;
 }
 
 .sec2 {
   display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sec3 {
   display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sec4 {
   display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sec5 {
   display: none;
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) translateX(0) scale(1);
+          transform: translateY(0) translateX(0) scale(1);
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 105, 240, 0.25)), color-stop(rgba(79, 201, 242, 0.25)), color-stop(rgba(111, 245, 153, 0.25)), color-stop(rgba(246, 248, 117, 0.25)), to(rgba(253, 89, 63, 0.25)));
   background-image: linear-gradient(to bottom right, rgba(255, 105, 240, 0.25), rgba(79, 201, 242, 0.25), rgba(111, 245, 153, 0.25), rgba(246, 248, 117, 0.25), rgba(253, 89, 63, 0.25));
 }
@@ -126,31 +127,31 @@ section {
 
 @-webkit-keyframes ani {
   0% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(-100%) scaleX(0);
+            transform: translateX(-100%) scaleX(0);
   }
   50% {
-    -webkit-transform: translateX(-10%) scale(0.5);
-            transform: translateX(-10%) scale(0.5);
+    -webkit-transform: translateX(-10%) scaleX(50%);
+            transform: translateX(-10%) scaleX(50%);
   }
   100% {
-    -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
+    -webkit-transform: translateX(0) scaleX(100%);
+            transform: translateX(0) scaleX(100%);
   }
 }
 
 @keyframes ani {
   0% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(-100%) scaleX(0);
+            transform: translateX(-100%) scaleX(0);
   }
   50% {
-    -webkit-transform: translateX(-10%) scale(0.5);
-            transform: translateX(-10%) scale(0.5);
+    -webkit-transform: translateX(-10%) scaleX(50%);
+            transform: translateX(-10%) scaleX(50%);
   }
   100% {
-    -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
+    -webkit-transform: translateX(0) scaleX(100%);
+            transform: translateX(0) scaleX(100%);
   }
 }
 
@@ -174,6 +175,8 @@ section {
           justify-content: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: var(--transition-trans);
+  transition: var(--transition-trans);
 }
 
 .ctrls .activate {
@@ -249,7 +252,7 @@ section {
 
 .theme {
   top: 5%;
-  right: 3.5%;
+  right: 3.65%;
   width: 85px;
   height: 85px;
   position: fixed;
@@ -280,5 +283,19 @@ section {
   font-size: 1.4rem;
   color: var(--color-white);
   pointer-events: none;
+}
+
+.welcome {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #eee;
+}
+
+.welcome p {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
 }
 /*# sourceMappingURL=style.css.map */
