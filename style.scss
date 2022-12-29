@@ -22,6 +22,10 @@
     --background-image-dark:url(./images/dark.jpg);
     --color-steel:#43464B;
     --colour-black:#3386ba;
+    --colour-home:linear-gradient(to bottom left ,rgb(36, 36, 36),black);
+    --colour-home1:linear-gradient(to bottom left ,rgb(37, 4, 52),black);
+    --colour-home2:linear-gradient(to bottom left ,rgb(0, 32, 13),black);
+    --colour-home3:linear-gradient(to bottom left ,rgb(44, 2, 40),black);
 }
 .light-mode{
     --color-white:rgb(214, 250, 82);
@@ -34,6 +38,10 @@
     --background-image-dark:url(./images/itl.cat_4k-ultra-hd-wallpapers_69235.png);
     --color-steel:#3386ba;
     --colour-black:rgb(50, 50, 50);
+    --colour-home:linear-gradient(to right bottom,rgb(31, 3, 43),rgb(3, 59, 76));
+    --colour-home1:linear-gradient(to right bottom,rgb(9, 69, 86),rgb(41, 9, 53));
+    --colour-home2:linear-gradient(to right bottom,rgb(51, 13, 63),rgb(17, 96, 43));
+    --colour-home3:linear-gradient(to right bottom,rgb(27, 99, 56),rgb(71, 23, 63));
 }
 body{
     background-image:var(--background-image-dark);
@@ -74,27 +82,31 @@ section{
 .sec1{
     display:none;
     transform: translateY(0)translateX(0)scale(1);
-    background-image: linear-gradient((to bottom right),rgba(246, 194, 148, 0.257),rgba(244, 238, 238, 0.25),rgba(46, 244, 109, 0.25));
-    background-color: none;
+    // background-image: linear-gradient((to bottom right),rgba(246, 194, 148, 0.257),rgba(244, 238, 238, 0.25),rgba(46, 244, 109, 0.25));
+    // background-image: linear-gradient(rgb(31, 3, 43),rgb(51, 42, 55));
+    background-image:var(--colour-home);
     
 }
 
-.sec2{
+.sec2{ 
     display:none;
     transform: translateY(0)translateX(0)scale(1);
-    background-color: rgba($color: white, $alpha: 0.2);
+    // background-color: rgba($color: white, $alpha: 0.2);
+    background-image: var(--colour-home1);
 }
 
 .sec3{
     display:none;
     transform: translateY(0)translateX(0)scale(1);
-    background-color: rgba($color: white, $alpha: 0.2);
+    // background-color: rgba($color: white, $alpha: 0.2);
+    background-image: var(--colour-home2);
 }
 
 .sec4{
     display:none;
     transform: translateY(0)translateX(0)scale(1);
-    background-color: rgba($color: white, $alpha: 0.2);
+    // background-color: rgba($color: white, $alpha: 0.2);
+    background-image: var(--colour-home3);
 }
 .sec5{
     display:none;
