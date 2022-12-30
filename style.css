@@ -30,7 +30,7 @@
 }
 
 .light-mode {
-  --color-white:rgb(214, 250, 82);
+  --color-white:rgb(255, 195, 122);
   --colour-black:#000;
   --colour-grey1:#121212;
   --color-grey2:#181818;
@@ -52,7 +52,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  font-family: 'Caveat', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: var(--color-white);
   -webkit-transition: all,.5s ease-in-out;
@@ -231,13 +231,104 @@ section {
   color: var(--color-grey5);
 }
 
+.main-title {
+  text-align: center !important;
+  font-family: 'Caveat', cursive;
+}
+
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.02em 0.05em 0 rgba(0, 255, 0, 0.75), 0.02em -0.05em 0 rgba(0, 0, 255, 0.75);
+  -webkit-animation: glitching 550ms infinite;
+          animation: glitching 550ms infinite;
+}
+
+.main-title h2 span {
+  position: absolute;
+  top: 0%;
+  left: 43.5%;
+}
+
+.main-title h2 span:first-child {
+  -webkit-animation: glitching 650ms infinite;
+          animation: glitching 650ms infinite;
+  -webkit-clip-path: polygon(0 41%, 100% 51%, 98% 54%, 0 56%);
+          clip-path: polygon(0 41%, 100% 51%, 98% 54%, 0 56%);
+  -webkit-transform: translate(0.025em, 0.015em);
+          transform: translate(0.025em, 0.015em);
+  opacity: 0.7;
+}
+
+.main-title h2 span:last-child {
+  -webkit-animation: glitching 350ms infinite;
+          animation: glitching 350ms infinite;
+  -webkit-clip-path: polygon(0 48%, 98% 70%, 100% 64%, 0 57%);
+          clip-path: polygon(0 48%, 98% 70%, 100% 64%, 0 57%);
+  -webkit-transform: translate(0.015em, -0.025em);
+          transform: translate(0.015em, -0.025em);
+  opacity: 0.7;
+}
+
+@-webkit-keyframes glitching {
+  0% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  24% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  25% {
+    text-shadow: 0.02em -0.05em 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  64% {
+    text-shadow: 0.02em -0.05em 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  65% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.07em 0 0.02em rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.07em 0 0.02em rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), -0.3em -0.09em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes glitching {
+  0% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  24% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  25% {
+    text-shadow: 0.02em -0.05em 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  64% {
+    text-shadow: 0.02em -0.05em 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), 0.02em -0.07em 0 rgba(0, 0, 255, 0.75);
+  }
+  65% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.07em 0 0.02em rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.07em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0.02em 0 rgba(0, 255, 0, 0.75), 0.07em 0 0.02em rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75), -0.07em 0.02em 0 rgba(0, 255, 0, 0.75), -0.3em -0.09em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
 .logo {
+  text-align: center;
+  left: -40%;
   font-weight: 700;
   font-size: 2em;
   letter-spacing: 3px;
-  width: 25%;
-  -webkit-animation: animate 25s linear infinite;
-          animation: animate 25s linear infinite;
+  width: 100%;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
 }
 
 @-webkit-keyframes animate {
@@ -294,14 +385,9 @@ section {
 .welcome {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
   text-align: center;
-  background-color: #eee;
-}
-
-.welcome p {
-  margin: 0;
-  padding: 20px 0;
-  border-bottom: 1px solid #333;
+  padding: 60px;
+  width: auto;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
